@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Server Side Rendering (SSR) :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Caching.html">Caching</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li><a href="index.html">FSXA PWA</a></li>
+    <li><a href="SSR.html">Server Side Rendering (SSR)</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Server Side Rendering (SSR)</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The FSXA-PWA project is based on the <a href="https://nuxtjs.org">Nuxt.js</a> framework which supports server side rendering (<a href="https://ssr.vuejs.org/#what-is-server-side-rendering-ssr">SSR</a>). In a single page application which uses client side rendering (CSR) the webserver only serves an almost empty HTML page and usually larger amounts of JavaScript. The JavaScript then gets executed in the browser where all the required JSON data gets requested. The application then renders the view using the requested data. The SSR approach is different in that the JSON data gets requested from the webserver and the rendering of the view takes place there. A fully rendered page is then sent to the client. This allows for search engines to crawl the pages more easily since they do not have the necessity to be able to execute JavaScript code. It also saves time on the initial download of the page because there is no additional code execution step in between downloads. Nuxt.js uses a hybrid approach where the generated JavaScript bundle is able to hydrate the client (ie. request JSON data and render on the client side) from this point onwards.</p>
+</div>
+<div class="paragraph">
+<p>In order to utilize SSR you need a node.js environment to serve the webpage. This also means that when writing code in this project you have to keep in mind that you do not have access to the <code>window</code> or <code>document</code> objects except in the <code>beforeMount</code> or <code>mounted</code> hooks.</p>
+</div>
+<div class="paragraph">
+<p>SSR is enabled in the FSXA-PWA by default. You can build the project for SSR deployment using</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm run build</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will create a <code>dist</code> folder in your working directory with all the files required to run your application in SSR mode. You can start serving the application using</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm run start</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can turn SSR off in the <code>nuxt.config.ts`by setting `ssr</code> to <code>false</code>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_prerendered_html"><a class="anchor" href="#_prerendered_html"></a>Prerendered HTML</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If all you need is <a href="#SEO.adoc" class="page unresolved">SEO</a> you can also generate prerendered HTML pages by adding the following line to the <code>Configuration</code> object in the <code>nuxt.config.ts</code>. In this case you also do not need to serve the HTML from a node.js environment.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">target: "static",</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can then generate all available routes as HTML using</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm run generate</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will create a <code>dist</code> folder in your working directory containing all the files required to statically host your application. It will generate static HTML for all the pages in the <code>pages</code> folder. It is therefore recommended to only be used in case pages are defined. You can put these files on your own webserver or host them directly from your working directory using the following command.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm run start</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can find more information on this topic in the <a href="https://nuxtjs.org/docs/2.x/get-started/commands#static-deployment-pre-rendered">Nuxt.js documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_client_only_components"><a class="anchor" href="#_client_only_components"></a>Client-only Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you want to turn SSR off for the scope of a single or multiple components you can use the <code>client-only</code> component. Any components declared within the <code>client-only</code> component will not be rendered on the server but instead on the client.</p>
+</div>
+<div class="paragraph">
+<p>You can use this for example if you want to access the <code>window</code> and/or <code>document</code> objects from a scope other than the <code>mounted</code> or <code>beforeMount</code> hooks.</p>
+</div>
+<div class="paragraph">
+<p>SFC example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;
+    &lt;client-only&gt;
+      &lt;TeaserSection prop="propvalue"&gt;
+      &lt;/TeaserSection&gt;
+    &lt;/client-only&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">render(){
+  return(
+    &lt;div&gt;
+      &lt;client-only&gt;
+        &lt;TeaserSection prop="propvalue"&gt;
+        &lt;/TeaserSection&gt;
+      &lt;/client-only&gt;
+    &lt;/div&gt;
+  )
+}</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_placeholders"><a class="anchor" href="#_placeholders"></a>Placeholders</h3>
+<div class="paragraph">
+<p>You can define a placeholder that will be rendered on the server and thus will be displayed while the client intializes a <code>client-only</code> component. You can either pass a string to the prop <code>placeholder</code> of the <code>client-only</code> component.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;client-only placeholder="Loading ..."&gt;
+  &lt;TeaserSection prop="propvalue"&gt;
+  &lt;/TeaserSection&gt;
+&lt;/client-only&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Or you can define your own component that will be used as placeholder</p>
+</div>
+<div class="paragraph">
+<p>SFC example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;
+    &lt;client-only&gt;
+      &lt;TeaserSection prop="propvalue"&gt;
+      &lt;/TeaserSection&gt;
+      &lt;Spinner slot="placeholder"&gt;
+      &lt;/Spinner&gt;
+    &lt;/client-only&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">render(){
+  return(
+    &lt;div&gt;
+      &lt;client-only scopedSlots={{
+        placeholder: () =&gt; &lt;div&gt;My Placeholder&lt;/div&gt;
+      }}&gt;
+        &lt;TeaserSection prop="propvalue"&gt;
+        &lt;/TeaserSection&gt;
+      &lt;/client-only&gt;
+    &lt;/div&gt;
+  )
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lazy_loading_components"><a class="anchor" href="#_lazy_loading_components"></a>Lazy Loading Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>You can turn any of your components into a lazy loaded component by adding the prefix <code>Lazy</code> when you refer to the component for rendering. You need to add the following line to your <code>nuxt.config.ts</code> for this to work.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">components: true</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Keep in mind that adding this line will cause <em>all your components</em> (located in the <code>/components</code> folder) to be auto imported.</p>
+</div>
+<div class="paragraph">
+<p>Lazy loading means the component gets loaded when it’s needed rather than being loaded when the page loads. You can use this for components that are rendered conditionally (using a v-if directive for example) or for components that take a long time to load.</p>
+</div>
+<div class="paragraph">
+<p>Lazy loading also means that your component is rendered in the client thus also giving you access to the <code>window</code> and <code>document</code> objects.</p>
+</div>
+<div class="paragraph">
+<p>SFC example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;
+    &lt;TeaserSection prop="propvalue"&gt;
+      &lt;!-- this component will be rendered on the server --&gt;
+    &lt;/TeaserSection&gt;
+    &lt;LazyTeaserSection prop="propvalue"&gt;
+      &lt;!-- this component will be rendered on the client and only when it is needed --&gt;
+    &lt;/LazyTeaserSection&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX example</p>
+</div>
+<div class="paragraph">
+<p>In typescript the issue is slightly more complicated, as the typescript compiler first needs to be told that a variable extended by the prefix <code>Lazy</code> exists</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javacript hljs" data-lang="javacript">declare const LazyTeaserSection: typeof TeaserSection
+render(){
+  return(
+    &lt;div&gt;
+      &lt;TeaserSection prop="propvalue"&gt;
+        //this component will be rendered on the server
+      &lt;/TeaserSection&gt;
+      &lt;LazyTeaserSection prop="propvalue"&gt;
+        //this component will be rendered on the client and only when it is needed
+      &lt;/LazyTeaserSection&gt;
+    &lt;/div&gt;
+  )
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

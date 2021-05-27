@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TPP-Snap :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">FSXA-PWA</a></li>
+    <li><a href="../index.html">FSXA PWA</a></li>
+    <li><a href="../advanced.html">Advanced</a></li>
+    <li><a href="TPP-Snap.html">TPP-Snap</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">TPP-Snap</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>TPP-Snap from the <a href="https://docs.e-spirit.com/tpp/index.html.en">OmnichannelManager</a> is a JavaScript library designed to connect the FirstSpirit ContentCreator UI with dynamically generated HTML elements (like in a PWA). This connection is achieved using preview ids. When you add a known preview id as an attribute to an HTML element the Snap library will automatically decorate it using borders and buttons when your PWA is viewed in the FirstSpirit ContentCreator. This allows editors to edit the contents of dynamically generated HTML Elements. The library also offers the tools to add your own buttons to the UI as you see fit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_nested_elements"><a class="anchor" href="#_nested_elements"></a>Nested Elements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>At layout and section level, the FSXA takes care of enriching the UI so that the elements are editable in the ContentCreator. However, as soon as we have sections within a dataset or a section, there is currently no automatism. So you have to take action here that your child sections can also be edited in the ContentCreator.</p>
+</div>
+<div class="paragraph">
+<p>This is really simple.</p>
+</div>
+<div class="paragraph">
+<p>To enable the editing of such a component make sure to provide a custom preview id for both the nested component as well as the parent component using the syntax #PARENT_COMPONENT_NAME and #NESTED_COMPONENT_INDEX as the following examples show.</p>
+</div>
+<div class="sect2">
+<h3 id="_examples"><a class="anchor" href="#_examples"></a>Examples</h3>
+<div class="sect3">
+<h4 id="_tsx"><a class="anchor" href="#_tsx"></a>TSX</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import { FSXABaseSection } from 'fsxa-pattern-library'
+import { Component } from 'vue-property-decorator'
+
+@Component({ name: 'MyCustomSection' })
+class MyCustomSection extends FSXABaseSection {
+  render() {
+    /**
+     * Replace both occasions of childSections with the name of your property
+     * data-preview-id must match the properties name
+     */
+    const sections = this.payload.childSections
+    return (
+      &lt;div data-previewId="#childSections"&gt;
+        {sections.childSections.map((section, index) =&gt; (
+          &lt;div data-preview-id={`#${index}`} key={index}&gt;
+            Render your nested section in here ...
+          &lt;/div&gt;
+        ))}
+      &lt;/div&gt;
+    )
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_sfc"><a class="anchor" href="#_sfc"></a>SFC</h4>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+    &lt;div data-preview-id="#childSections"&gt;
+        &lt;div v-for="(section, index) in payload.childSections" :data-preview-id="'#' + index" :key="index"&gt;
+            Render your section in here
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script lang="typescript"&gt;
+import { FSXABaseSection } from 'fsxa-pattern-library'
+import { Component } from 'vue-property-decorator'
+
+@Component({ name: 'MyCustomSection' })
+class MyCustomSection extends FSXABaseSection {}
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Further information can be found in the documentation for the <a href="https://docs.e-spirit.com/tpp/snap/index.html#nested-components">TPP-Snap</a> library, which is automatically integrated in the preview mode and enables these functionalities.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_inline_editing"><a class="anchor" href="#_inline_editing"></a>Inline Editing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For some FirstSpirit input components inline editing is possible. Please refer to the <a href="https://docs.e-spirit.com/tpp/snap/index.html#inline-editing">TPP-Snap documentation</a> for further information.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

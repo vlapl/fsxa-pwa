@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FSXABaseComponent :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="3">
+    <a class="nav-link" href="FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">FSXA-PWA</a></li>
+    <li><a href="../index.html">FSXA PWA</a></li>
+    <li><a href="../components.html">Base Components</a></li>
+    <li><a href="FSXABaseComponent.html">FSXABaseComponent</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">FSXABaseComponent</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#_introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#_usage">Usage</a></p>
+</li>
+<li>
+<p><a href="#_properties">Properties</a></p>
+</li>
+<li>
+<p><a href="#_methods">Methods</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The FSXABaseComponent is there to have a basic component to be able to implement further components.
+It provides different attributes and methods, which should simplify the development significantly. These are described in this section.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use this base component a new class has to be created which extends the <code>FSXABaseComponent</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">@Component
+class Component extends FSXABaseComponent {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to have type support for your props you can provide an interface and pass it as a generic like the <code>Props</code> interface in this example.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">@Component
+class Component extends FSXABaseComponent&lt;Props&gt; {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If additionally you want type support for your events, you can pass a second interface.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">@Component
+class LayoutComponent extends FSXABaseComponent&lt;Props, EventsWithOn&gt; {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note: If you only want type support for your events and not the props you have to pass an empty interface <code>{}</code> as the data generic.</p>
+</div>
+<div class="paragraph">
+<p>To additionally have type support for your slots, you can pass a third interface.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">@Component
+class LayoutComponent extends FSXABaseComponent&lt;Props, EventsWithOn, Slots&gt; {}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note: If you only want type support for your slots and not the props or events you have to pass empty interfaces <code>{}</code> as the <code>Props</code> and <code>EventsWithOn</code> generics.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_properties"><a class="anchor" href="#_properties"></a>Properties</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_currentpage_string"><a class="anchor" href="#_currentpage_string"></a><code>currentPage</code> - string</h3>
+<div class="paragraph">
+<p>This property returns the NavigationItem that is matching the current path. If <code>null</code> is returned, no current route could be matched to the current path.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxaapi_object"><a class="anchor" href="#_fsxaapi_object"></a><code>fsxaApi</code> - Object</h3>
+<div class="paragraph">
+<p>This property returns a preconfigured and ready-to-use FSXA-API instance.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_globalsettings_string"><a class="anchor" href="#_globalsettings_string"></a><code>globalSettings</code> - string</h3>
+<div class="paragraph">
+<p>This property returns the globally configured project properties. If no projectProperties are defined in your CaaS this will return <code>null</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iseditmode_boolean"><a class="anchor" href="#_iseditmode_boolean"></a><code>isEditMode</code> - boolean</h3>
+<div class="paragraph">
+<p>This property returns <code>true</code> if the app is delivering preview data. It will return <code>false</code> if it is released data.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_locale_string"><a class="anchor" href="#_locale_string"></a><code>locale</code> - string</h3>
+<div class="paragraph">
+<p>This property returns the current locale abbreviation the content is displayed in, e.g. <code>en_GB</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_navigationdata_object"><a class="anchor" href="#_navigationdata_object"></a><code>navigationData</code> - Object</h3>
+<div class="paragraph">
+<p>This property returns the current navigation data.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_methods"><a class="anchor" href="#_methods"></a>Methods</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_getstoreditem"><a class="anchor" href="#_getstoreditem"></a><code>getStoredItem</code></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">getStoredItem&lt;T&gt;(key: string): T</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This method returns the stored data which was set with the given key.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_geturlbypageid"><a class="anchor" href="#_geturlbypageid"></a><code>getUrlByPageId</code></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">getUrlByPageId(pageId: string, locale?: string | undefined): string | null</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This method returns the corresponding route for a given <code>pageId</code>. If no page was found <code>null</code> will be returned.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setstoreditem"><a class="anchor" href="#_setstoreditem"></a><code>setStoredItem</code></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">setStoredItem&lt;T&gt;(key: string, value: T, ttl?: number): void</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This method saves your data in the <code>Vuex</code>-Store.
+You can use this to store your data from 3rd party services that were fetched in the Server Side Rendering process to access it later in the client.</p>
+</div>
+<div class="paragraph">
+<p>You can specify a time-to-live duration in ms, that determines how long the value will be valid. The default is `300000`ms.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_triggerroutechange"><a class="anchor" href="#_triggerroutechange"></a><code>triggerRouteChange</code></h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">triggerRouteChange(params: {pageId?:string, route?:string, locale?:string}): Promise&lt;void&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This method will trigger a route change request. A <code>pageId</code>, <code>route</code> or <code>locale</code> can be passed in. If a corresponding page is found the route change will be triggered. Since this is only available when javascript is enabled, make sure that some kind of fallback is provided.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Working with Images :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li><a href="index.html">FSXA PWA</a></li>
+    <li><a href="WorkingWithImages.html">Working with Images</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Working with Images</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#_introduction">Introduction</a></p>
+</li>
+<li>
+<p><a href="#_working_with_caas">Working with CaaS</a></p>
+</li>
+<li>
+<p><a href="#_resolutions_in_firstspirit">Resolutions in FirstSpirit</a></p>
+</li>
+<li>
+<p><a href="#_responsiveness">Responsiveness</a></p>
+</li>
+<li>
+<p><a href="#_lazy_loading">Lazy Loading</a></p>
+</li>
+<li>
+<p><a href="#_sourcesets">SourceSets</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In modern web design an image needs to be available in multiple croppings and resolutions in order to be rendered in all layouts across all devices or be usable in more than one slot (banner, slider, thumbnails, gallery etc.). The FSXA-PWA offers a variety of tools to ensure the correct image gets loaded at the proper time. In order to save on bandwidth and thus reduce page loading times it is important to generate and store the same image in multiple resolutions and croppings.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_working_with_caas"><a class="anchor" href="#_working_with_caas"></a>Working with CaaS</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The FirstSpirit CaaS contains meta information about the various resolutions your image is available in. When you encounter an image reference for your page or section it will probably look like this.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"st_media": {
+  "fsType": "FS_REFERENCE",
+  "name": "st_media",
+  "value": {
+    "fsType": "Media",
+    "name": "test_cam",
+    "identifier": "72c4dd5d-2266-4baa-a242-a350dc05e512",
+    "uid": "test_cam",
+    "uidType": "MEDIASTORE_LEAF",
+    "mediaType": "PICTURE",
+    "url": "https://your.caas.url/your-project/d8db6f24-0bf8-4f48-be47-5e41d8d427fc.preview.content/72c4dd5d-2266-4baa-a242-a350dc05e512.en_GB"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see, the data contains a URL reference that usually points towards the FirstSpirit CaaS media collection. Sending a request to that URL will yield all the available resolutions of the image in the new json result (see example below). Each entry has a name that corresponds to the FirstSpirit image resolution in the project settings and contains a URL pointing to the location of the image in that specific resolution. This URL can point towards the CaaS or it can point to a CDN that stores your image depending on your project configuration.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">"ORIGINAL": {
+  "fileSize": 113958,
+  "extension": "jpg",
+  "mimeType": "image/jpeg",
+  "width": 1280,
+  "height": 720,
+  "url": "https://where.your.image.is.stored/d8db6f24-0bf8-4f48-be47-5e41d8d427fc/preview/Images/Product-Images/Security-Camera.jpg"
+},
+"banner_slider": {
+  "fileSize": 275856,
+  "extension": "jpg",
+  "mimeType": "image/jpeg",
+  "width": 1920,
+  "height": 1080,
+  "url": "https://where.your.image.is.stored/d8db6f24-0bf8-4f48-be47-5e41d8d427fc/preview/Images/Product-Images/Security-Camera_banner_slider.jpg"
+},
+"echo_show5": {
+  "fileSize": 73716,
+  "extension": "jpg",
+  "mimeType": "image/jpeg",
+  "width": 960,
+  "height": 480,
+  "url": "https://where.your.image.is.stored/d8db6f24-0bf8-4f48-be47-5e41d8d427fc/preview/Images/Product-Images/Security-Camera_echo_show5.jpg"
+},</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resolutions_in_firstspirit"><a class="anchor" href="#_resolutions_in_firstspirit"></a>Resolutions in FirstSpirit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>FirstSpirit offers a toolset to create and store multiple croppings and/or resolutions for the same image. This functionality is reflected by the CaaS. You can define your resolutions in the project settings. An editor can choose for each image individually which resolutions they want to have generated. There is also a cropping tool available in case a specific resolution changes the aspect ratio of an image.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_responsiveness"><a class="anchor" href="#_responsiveness"></a>Responsiveness</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The ability of the page layout to adapt to multiple screen resolutions and aspect ratios is called responsiveness. For images this is usually achieved by defining breakpoints for screen sizes at which the browser will switch to a different version of the image. The predefined components of the <a href="https://enterprise-fsxa-ui.e-spirit.cloud/components/image">FSXA-UI</a> library use 5 breakpoints internally. Keep this in mind when developing your own components.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_lazy_loading"><a class="anchor" href="#_lazy_loading"></a>Lazy Loading</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The term lazy loading refers to loading certain resources at the latest possible moment as opposed to loading all resources at the initial rendering of a page. If you use the <a href="https://enterprise-fsxa-ui.e-spirit.cloud/components/image">FSXA-UI image component</a> you can set the lazy loading prop to true and the image will only be loaded when it’s on the screen. This can contribute immensely to reduce initial page loading times but should be used sparingly. If used too much it could result in a page that appears very laggy because images will be fetched during scrolling or other navigation interactions.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sourcesets"><a class="anchor" href="#_sourcesets"></a>SourceSets</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Source sets are an HTML5 feature that allows to define multiple sources for the same <code>&lt;img&gt;</code> tag. There are multiple ways to use them. You can either define a source set using the srcset attribute at an <code>&lt;img&gt;</code> tag or you can use the <code>&lt;picture&gt;</code> tag and define the sources using <code>&lt;source&gt;</code> tags. Or you can use the <a href="https://enterprise-fsxa-ui.e-spirit.cloud/components/image">FSXA-UI image component</a> which will combine all the images you provide to a source set. However you do it, the main advantage is that the browser will only request the image defined for the current viewport size. You can read more about source sets in the <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/srcset">MDN docs</a></p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

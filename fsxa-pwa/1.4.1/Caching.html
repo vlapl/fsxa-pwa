@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Caching :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li><a href="index.html">FSXA PWA</a></li>
+    <li><a href="Caching.html">Caching</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Caching</h1>
+<div class="paragraph">
+<p>A PWA is usually a view on data hosted on a server somewhere. This means when a user loads a page for the first time, requests will be sent by the server hosting the PWA (see also <a href="SSR.html" class="page">SSR</a>) to the server that hosts the data. The page will be rendered and sent to the client where it can be viewed. The data that is required to create the current view is sent along with it and the client side storage will be hydrated with the fresh data. This allows the user to navigate the page and views without having to fetch new data from the backend. Sometimes you don’t want to fetch new data from the backend to refresh a page or a view. Additionally you might want to control which data is available offline for various reasons (eg. it could be a big chunk of data). This is where caching comes in.</p>
+</div>
+<div class="paragraph">
+<p>When you have a component that extends <a href="components/FSXABaseComponent.html" class="page">FSXABaseComponent</a> you get access to the <code>setStoredItem</code> and <code>getStoredItem</code> functions. These functions basically utilize the vuex store to save data for you. You have to pick a string as key and later you can retrieve your items from the store using the key. You can set a time to live in milliseconds, the default being <code>300000</code> or 5 minutes. When this time runs out, your cache is invalidated and the <code>getStoredItem</code> function will return <code>undefined</code>.</p>
+</div>
+<div class="paragraph">
+<p>It is up to you to write your component in such a manner, that the data is refetched if the cache is invalidated. Here are two examples of what this could look like.</p>
+</div>
+<div class="paragraph">
+<p>SFC-Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div v-if="myFreshData()"&gt;{{ myFreshData() }}&lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+  export default {
+    extends: FSXABaseComponent,
+    data() {
+      return {
+        myFreshData() {
+          return this.getStoredItem('myFreshData')
+        }
+      }
+    },
+    mounted() {
+      this.fetchData()
+    },
+    methods: {
+      async fetchData() {
+        const data = //make your async request to the server containing the data here
+        this.setStoredItem('myFreshData', data, 100000)
+      }
+    },
+  }
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX-Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">@Component({
+  name: 'MyComponent',
+})
+class MyComponent extends FSXABaseComponent&lt;{}&gt;{
+  mounted() {
+    if(!this.myData()){
+      this.fetchData()
+    }
+  }
+  async fetchData() {
+    const data = //make your async request to the server containing the data here
+    this.setStoredItem('myFreshData', data, 100000)
+  }
+
+  get myData(){
+    return this.getStoredItem('myFreshData') || null
+  }
+  render(){
+    return(
+      &lt;div&gt;
+        this.myData ? myData : null
+      &lt;/div&gt;
+    )
+  }
+}</code></pre>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

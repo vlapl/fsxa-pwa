@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sending Mails :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+    <script>var uiRootPath = '../../../../_'</script>
+    <link rel="icon" href="../../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../../../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="4">
+    <a class="nav-link" href="SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../../index.html">FSXA-PWA</a></li>
+    <li><a href="../../index.html">FSXA PWA</a></li>
+    <li><a href="../../advanced.html">Advanced</a></li>
+    <li><a href="../../custom-api-routes.html">Custom API Routes</a></li>
+    <li><a href="SendingMails.html">Example 3: Sending Mails</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Sending Mails</h1>
+<div class="paragraph">
+<p>In this chapter you will implement a REST-API, that can send emails.
+For this purpose, you will use the FSXA-PWA Project to add a new route and implement it with <a href="https://github.com/nodemailer/nodemailer">Nodemailer</a>.</p>
+</div>
+<div class="paragraph">
+<p>In this example we will implement a contact form where we take information such as the name, email, company name and message
+and send it in an email.</p>
+</div>
+<div class="paragraph">
+<p>Please note the general preface, how to define CustomRoutes.</p>
+</div>
+<div class="paragraph">
+<p>As a starting point we have a file named <code>mailService.ts</code> with the content</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import express, { Request, Response } from 'express'
+// eslint-disable-next-line import/named
+import { FSXAMiddlewareContext } from 'fsxa-nuxt-module'
+
+export default {
+  async handler(
+    context: FSXAMiddlewareContext,
+    request: Request,
+    response: Response
+  ) {
+    const app = express()
+    app.use(express.json())
+
+    return app(request, response)
+  },
+  route: '/mailService/'
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>First, you want to create a new endpoint that will receive the required data when a POST-Request is made. To keep it simple exactly sends back again.</p>
+</div>
+<div class="paragraph">
+<p>To do this, after the express app has been initalized,
+you create a new POST endpoint and send the body back when you get it.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">app.post('/', (req, res) =&gt; {
+  res.send(req.body)
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And when you try this in Postman, you get the corresponding result.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../../../imgs/CustomApiRoutes/MailServiceBasicRequest.png" alt="MailServiceBasicRequest"></span></p>
+</div>
+<div class="paragraph">
+<p>First of all you want to make sure that you really get a name, an email, a company name and a message for each request and you want to check if the email that was given can be correct at all.</p>
+</div>
+<div class="paragraph">
+<p>You destructure the body of the request and take the values, expected to be present there.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const { email, subject, company, content } = req.body</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Next you want to check if all values are set and if they are not, you send the status code 422 (Unprocessable Entity) with a corresponding error message. You should make sure with the <code>return</code> that the code is not continued here, since you have already sent the message.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">if (!email || !subject || !company || !content) {
+  return res.status(422).send({
+    code: 422,
+    message: 'Please provide email, subject, company and content'
+  })
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can also outsource this logic to a separate method, which can make the logic in the request look cleaner . This is what you do in the next example, where you check if the email is valid.</p>
+</div>
+<div class="paragraph">
+<p>For this you write <strong>over</strong> the <code>export default</code> a new method that is called <code>isEmailValid</code> which takes a string.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const isEmailValid = (email: string) =&gt; {
+  return email.includes('@')
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>There you will check if the email also contains an @ sign. It is kept simple, but this method can be extended very conveniently afterwards.</p>
+</div>
+<div class="paragraph">
+<p>Now you can include the method in our POST request and if no valid email is provided, issue an error message.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">if (!isEmailValid(email)) {
+  return res
+    .status(422)
+    .send({ code: 422, message: 'Please provide a valid email' })
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can try this again and see that if you specified an email without an @ sign, this exact error message appears.</p>
+</div>
+<div class="paragraph">
+<p>But now you can take that information and finally send an email.</p>
+</div>
+<div class="paragraph">
+<p>For this you use the library <a href="https://www.npmjs.com/package/nodemailer">Nodemailer</a>. In this example we cannot go into all the possibilities and features of Nodemailer. If you are interested, we recommend a look at the <a href="https://nodemailer.com/about/">Documentation</a>.</p>
+</div>
+<div class="paragraph">
+<p>First you install nodemailer via npm.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">npm install nodemailer @types/nodemailer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>and import it at the top in the <code>mailService.ts</code> data</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">import nodemailer from 'nodemailer'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Nodemailer offers the possibility to create a test account together with <a href="https://ethereal.email/">ethereal.email</a>. This is what you will do in this example. You could use your own account for this, just make sure not to make your credentials public.</p>
+</div>
+<div class="paragraph">
+<p>You create a new method to send the email. In this method we create the test account and the transporter where we connect to the SMTP server.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const sendMail = async (mailContent: MailContent) =&gt; {
+  const testAccount = await nodemailer.createTestAccount()
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false,
+    auth: {
+      user: testAccount.user,
+      pass: testAccount.pass
+    }
+  })
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With this transporter you can now call a method to send an email.
+There you can specify the sender, the recipient, the subject and the content of the email.
+You can add this directly after creating the <code>transporter</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const info = await transporter.sendMail({
+  from: '"Sending Test Account" &lt;sender@example.com&gt;',
+  to: 'Receiving Test Account &lt;receiver@example.com&gt; ',
+  subject: 'Testing Mail',
+  text: 'Hello World',
+  html: '&lt;h1&gt;Hello World&lt;/h1&gt;'
+})
+return info</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here you can specify <code>text</code> <strong>and</strong> <code>html</code>. The <code>text</code> serves as a fallback in case an email provider does not support HTML.</p>
+</div>
+<div class="paragraph">
+<p>You can now call the <code>sendMail</code> method in your controller:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">sendMail({ email, subject, company, content })
+  .then((info) =&gt; {
+    console.log(nodemailer.getTestMessageUrl(info))
+    res.send(info)
+  })
+  .catch((err) =&gt; {
+    res
+      .status(err.responseCode || 400)
+      .send({ code: err.responseCode || 400, err })
+  })</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If the sending of the email was successful, you have the possibility with <code>Nodemailer</code> to let you print the URL with the message. The information will also be sent back as a response to the request.
+If the sending of the email is not successful, the corresponding status code, or if it does not exist <code>400</code>, and the error message should be sent back.</p>
+</div>
+<div class="paragraph">
+<p>If you open the URL that was logged out in the console in the browser, you will see the message that was sent.</p>
+</div>
+<div class="paragraph">
+<p>Now we want to add our own content to this email.
+For this we first create an <code>interface</code> in which we say which content we want to use:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">interface MailContent {
+  email: string
+  subject: string
+  company: string
+  content: string
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Next, we create two functions that will create text using the parameters, one as plain text and one as email.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const generateText = ({ email, subject, company, content }: MailContent) =&gt; {
+  return `
+NEW MESSAGE RECEIVED
+Data:
+Subject: ${subject}
+Email: ${email}
+Company: ${company}
+Content: ${content}
+`
+}
+
+const generateHTML = ({ email, subject, company, content }: MailContent) =&gt; {
+  return `
+  &lt;h1&gt;NEW MESSAGE RECEIVED&lt;/h1&gt;
+  &lt;p&gt;Data:
+  &lt;ul&gt;
+    &lt;li&gt;Email: ${email}&lt;/li&gt;
+    &lt;li&gt;Subject: ${subject}&lt;/li&gt;
+    &lt;li&gt;Company: ${company}&lt;/li&gt;
+    &lt;li&gt;Content: &lt;pre&gt;${content}&lt;/pre&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/p&gt;
+`
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In our <code>sendMail</code> function we can now also pass the content and use our created functions.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const sendMail = async (mailContent: MailContent) =&gt; {
+  const testAccount = await nodemailer.createTestAccount()
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false,
+    auth: {
+      user: testAccount.user,
+      pass: testAccount.pass
+    }
+  })
+  const info = await transporter.sendMail({
+    from: '"Sending Test Account" &lt;sender@example.com&gt;',
+    to: 'Receiving Test Account &lt;receiver@example.com&gt; ',
+    subject: 'Test',
+    text: generateText(mailContent),
+    html: generateHTML(mailContent)
+  })
+  return info
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The whole file should look like this in the end:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import express, { Request, Response } from 'express'
+// eslint-disable-next-line import/named
+import { FSXAMiddlewareContext } from 'fsxa-nuxt-module'
+import nodemailer from 'nodemailer'
+
+interface MailContent {
+  email: string
+  subject: string
+  company: string
+  content: string
+}
+
+const generateText = ({ email, subject, company, content }: MailContent) =&gt; {
+  return `
+NEW MESSAGE RECEIVED
+Data:
+Subject: ${subject}
+Email: ${email}
+Company: ${company}
+Content: ${content}
+`
+}
+
+const generateHTML = ({ email, subject, company, content }: MailContent) =&gt; {
+  return `
+  &lt;h1&gt;NEW MESSAGE RECEIVED&lt;/h1&gt;
+  &lt;p&gt;Data:
+  &lt;ul&gt;
+    &lt;li&gt;Email: ${email}&lt;/li&gt;
+    &lt;li&gt;Subject: ${subject}&lt;/li&gt;
+    &lt;li&gt;Company: ${company}&lt;/li&gt;
+    &lt;li&gt;Content: &lt;pre&gt;${content}&lt;/pre&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;/p&gt;
+`
+}
+
+const sendMail = async (mailContent: MailContent) =&gt; {
+  const testAccount = await nodemailer.createTestAccount()
+  const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    secure: false,
+    auth: {
+      user: testAccount.user,
+      pass: testAccount.pass
+    }
+  })
+  const info = await transporter.sendMail({
+    from: '"Sending Test Account" &lt;sender@example.com&gt;',
+    to: 'Receiving Test Account &lt;receiver@example.com&gt; ',
+    subject: 'Test',
+    text: generateText(mailContent),
+    html: generateHTML(mailContent)
+  })
+  return info
+}
+
+const isEmailValid = (email: string) =&gt; {
+  return email.includes('@')
+}
+
+export default {
+  async handler(context: FSXAMiddlewareContext, req: Request, res: Response) {
+    const app = express()
+    app.post('/', async (req, res) =&gt; {
+      const { email, subject, company, content } = req.body
+      if (!email || !subject || !company || !content) {
+        return res.status(422).send({
+          code: 422,
+          message: 'Please provide email, subject, company and content'
+        })
+      }
+      if (!isEmailValid(email)) {
+        return res
+          .status(422)
+          .send({ code: 422, message: 'Please provide a valid email' })
+      }
+
+      sendMail({
+        email,
+        subject,
+        company,
+        content
+      })
+        .then((info) =&gt; {
+          console.log(nodemailer.getTestMessageUrl(info))
+          res.send(info)
+        })
+        .catch((err) =&gt; {
+          res
+            .status(err.responseCode || 400)
+            .send({ code: err.responseCode || 400, err })
+        })
+    })
+    return app(req, res)
+  },
+  route: '/mailService/'
+}</code></pre>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../../_/js/site.js"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

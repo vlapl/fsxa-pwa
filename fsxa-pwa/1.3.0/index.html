@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FSXA PWA :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.3.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FSXA PWA</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="index.html">Index</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="GettingStarted.html#_my_first_template">My First Template</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted.html#_custom_css">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted.html#_changing_the_app_layout">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Configuration.md">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Configuration.md#env-file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Configuration.md#fsxaconfig">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Vuex-Store</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:DevMode.md">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Routing.md">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Richtext.md">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#fsxa-pwa:ROOT:css/index.md">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:css/Component.md">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:css/RemovingTailwind.md">Removing TailwindCSS</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:ProjectProperties.md">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Global Content</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Working with Images</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Caching (StoredContent, TTL)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:SSR.md">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:RemovingPresets.md">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#:ROOT:components/index.md">Base Components</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.3.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link is-current"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li>FSXA PWA</li>
+    <li><a href="index.html">Index</a></li>
+  </ul>
+</nav>
+<a href="../../index.html.de">German version</a>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">FSXA PWA</h1>
+<div class="sect1">
+<h2 id="_general"><a class="anchor" href="#_general"></a>General</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Each example should provide code snippets for tsx and sfc syntax.</p>
+</li>
+<li>
+<p>Related Pages / Sections should be linked, where possible (use anchor links for nested sections as well)</p>
+</li>
+<li>
+<p>Related documentations should be linked (make sure that you do not link to a specific version, since this link can invalidate really quickly)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structure"><a class="anchor" href="#_structure"></a>Structure</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>FSXA PWA</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="index.html" class="page">Index</a></p>
+</li>
+<li>
+<p><a href="Introduction.html" class="page">Introduction</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="Introduction.html#_general" class="page">General</a></p>
+</li>
+<li>
+<p><a href="Introduction.html#_projects_used" class="page">Projects used</a></p>
+</li>
+<li>
+<p><a href="Introduction.html#_architecture" class="page">Architecture</a></p>
+</li>
+<li>
+<p><a href="Introduction.html#_deployment" class="page">Deployment</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="GettingStarted.html" class="page">Getting Started</a></p>
+</li>
+<li>
+<p><a href="GettingStarted.html#_my_first_template" class="page">My First Template</a> (Pattern-Lib)</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="GettingStarted.html#_custom_css" class="page">Adding CSS</a></p>
+</li>
+<li>
+<p><a href="GettingStarted.html#_changing_the_app_layout" class="page">Changing the App Layout</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:Configuration.md">Configuration</a> (Pattern-Lib)</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#fsxa-pwa:ROOT:Configuration.md#env-file" class="page unresolved">.env File</a></p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:Configuration.md#fsxaconfig" class="page unresolved">fsxa.config</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Vuex-Store</p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:DevMode.md">DevMode</a></p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:Routing.md">Routing</a></p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:Richtext.md">Working with Richtext</a> (Pattern-Lib)</p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:css/index.md">Custom CSS</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#fsxa-pwa:ROOT:css/Component.md">Adding Custom CSS to your Component</a> (Pattern-Lib)</p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:css/RemovingTailwind.md">Removing TailwindCSS</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:ProjectProperties.md">ProjectProperties</a> (Pattern-Lib)</p>
+</li>
+<li>
+<p>Global Content</p>
+</li>
+<li>
+<p>Working with Images</p>
+</li>
+<li>
+<p>Caching (StoredContent, TTL)</p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:SSR.md">Server Side Rendering (SSR)</a></p>
+</li>
+<li>
+<p><a href="#fsxa-pwa:ROOT:RemovingPresets.md">Removing Presets</a></p>
+</li>
+<li>
+<p><a href="#:ROOT:components/index.md">Base Components</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="../../fsxa-api/5.3/index.html" class="page">FSXA-Api</a></p>
+</li>
+<li>
+<p><a href="../../fsxa-nuxt-module/3.3.1/index.html" class="page">FSXA Nuxt Module</a></p>
+</li>
+<li>
+<p><a href="../../fsxa-pattern-library/3.3.0/index.html" class="page">FSXA Pattern Library</a></p>
+</li>
+<li>
+<p><a href="../../fsxa-ui/4.1.0/index.html" class="page">FSXA-UI</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>External CSS</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

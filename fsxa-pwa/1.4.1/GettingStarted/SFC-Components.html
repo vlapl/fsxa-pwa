@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Writing Single File Components :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">FSXA-PWA</a></li>
+    <li><a href="SFC-Components.html">Writing Single File Components</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Writing Single File Components</h1>
+<div class="paragraph">
+<p>In this section we will be exploring how to go about implementing a missing Teaser section using the classic vue single file components.</p>
+</div>
+<div class="paragraph">
+<p>When you go to the home page in the development mode, you will see that one component is missing.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../_images/WritingComponents/MissingSection.png" alt="MissingSection"></span></p>
+</div>
+<div class="paragraph">
+<p>This infobox tells us that the app expects a component of type <code>Section</code>. We can also see that the key of this missing section is <code>teaser</code>.</p>
+</div>
+<div class="paragraph">
+<p>In the <code>fsxa.config.js</code> file we can see that our section components are located in <code>~/components/fsxa/sections</code>.
+That’s where you want to create a new file for the component.</p>
+</div>
+<div class="paragraph">
+<p>Make sure you name the file just like the key that is required. In our case it is <code>teaser</code> so we name our new file <code>Teaser.vue</code>.</p>
+</div>
+<div class="paragraph">
+<p>Next we need to import the base class that we will derive our class from:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;script&gt;
+  import { FSXABaseSection } from 'fsxa-pattern-library'
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With this we can start writing our class.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">export default {
+  name: 'TeaserSection',
+  extends: [FSXABaseSection]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Next we can add a template tag to the file so we can see something when we fire up the dev server.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;Hello Component&lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For the time being our <code>Teaser.vue</code> file should look something like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;Hello Component&lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import { FSXABaseSection } from 'fsxa-pattern-library'
+export default {
+  name: 'TeaserSection',
+  extends: [FSXABaseSection]
+}
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we go back to the browser, instead of the infobox we should see our component.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../_images/WritingComponents/HelloComponent.png" alt="Hello Component"></span></p>
+</div>
+<div class="paragraph">
+<p>Our component is recognized correctly. But we still do not display the data from the <a href="https://docs.e-spirit.com/module/caas/CaaS_FSM_Documentation_EN.html">CaaS</a> in our component.
+For that we hover over our component and click on the appearing question mark on the right side.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="../_images/WritingComponents/AvailableProperties.png" alt="Available Properties"></span></p>
+</div>
+<div class="paragraph">
+<p>This shows us the data available to display.
+For the first example we want to display the <code>st_jumbo_headline</code>. Since the payload property is inherited by the <code>FSXABaseSection</code> we can now access it as an attribute.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;Headline: {{ $attrs.payload.st_jumbo_headline }}&lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The result should look like this:
+<span class="image"><img src="../_images/WritingComponents/DisplayedHeadline.png" alt="Displayed Headline"></span></p>
+</div>
+<div class="paragraph">
+<p>In order to display all the payload data, we can use a component from the <a href="https://github.com/e-Spirit/fsxa-ui/">fsxa-ui</a>. We need to import it. It is located under Sections in the fsxa-ui. Since the payload also contains richtext we also need to import FSXARichText from the <a href="https://github.com/e-Spirit/fsxa-pattern-library">fsxa-pattern-library</a>
+Don’t forget to register the imported components.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import { Sections } from 'fsxa-ui'
+import { FSXABaseSection, FSXARichText } from 'fsxa-pattern-library'
+export default {
+  name: 'TeaserSection',
+  components: {
+    'teaser-section': Sections.TeaserSection,
+    'rich-text': FSXARichText
+  },
+  extends: [FSXABaseSection]
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Using them in our template is slightly more complicated than in the TSX example. So we will gradually build it up. We’ll start off by passing only the required props.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    kicker="Some kicker text"
+    headline="This is a headline"
+    text="So here is a lot of text" /&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Using this example we can pass simple strings into the props and the <code>teaser-section</code> component will render these for us. But the kicker and the headline in the payload contain richtext, which we will render using the <code>FSXARichText</code> component. Since we can’t pass components into props we will have to resort to <a href="https://vuejs.org/v2/guide/components-slots.html#Scoped-Slots">scopedSlots</a></p>
+</div>
+<div class="paragraph">
+<p>First, let’s extend the above example by rendering the headline in our own custom way using scoped slots.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    kicker="Some kicker text"
+    headline="This is a headline"
+    text="So here is a lot of text"&gt;
+    &lt;template v-slot:headline="customHeadline"&gt;
+      &lt;h1 style="color: tomato"&gt;
+        {{ customHeadline }}
+      &lt;/h1&gt;
+    &lt;/template&gt;
+  &lt;/teaser-section&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As you can see we extended the <code>teaser-section</code> tag to also use an enclosing tag and added another <code>template</code> tag. Using the v-slot directive we can choose which slot the template represents. What we pass into the v-slot directive can be any string. We basically declare a variable at this point which represents the data we passed into the <code>headline</code> prop. We use the variable inside the <code>h1</code> tag where it will render as ``this is a headline''.</p>
+</div>
+<div class="paragraph">
+<p>Now let’s see what this looks like when we add our payload data.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    :kicker="this.$attrs.payload.st_kicker"
+    :headline="this.$attrs.payload.st_headline"
+    :text="this.$attrs.payload.st_text"
+  &gt;
+    &lt;template v-slot:headline="headline"&gt;
+      &lt;rich-text :content="headline" /&gt;
+    &lt;/template&gt;
+    &lt;template v-slot:text="text"&gt;
+      &lt;rich-text :content="text" /&gt;
+    &lt;/template&gt;
+  &lt;/teaser-section&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note how we replaced all props with bindings to the payload data. We also use a second template tag, representing the text slot. Inside the templates we use <code>FSXARichText</code> components (which we named <code>rich-text</code>) to render the rich text data from the <code>st_text</code> and <code>st_headline</code> properties.</p>
+</div>
+<div class="paragraph">
+<p>Next let’s add our image. The prop <code>media</code> asks for an object with the following properties: <code>type</code>,<code>src</code>,<code>resolutions</code>,<code>previewId</code>. For readability we should construct this object in a function and simply call the function when we bind the prop in the template. We add a <code>methods</code> property to our vue object and define the function there.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    :kicker="this.$attrs.payload.st_kicker"
+    :headline="this.$attrs.payload.st_headline"
+    :text="this.$attrs.payload.st_text"
+    :media="getMedia()"
+  &gt;
+    &lt;template v-slot:headline="headline"&gt;
+      &lt;rich-text :content="headline" /&gt;
+    &lt;/template&gt;
+    &lt;template v-slot:text="text"&gt;
+      &lt;rich-text :content="text" /&gt;
+    &lt;/template&gt;
+  &lt;/teaser-section&gt;
+&lt;/template&gt;
+&lt;script&gt;
+export default {
+  name: 'TeaserSection',
+  components: {
+    'teaser-section': Sections.TeaserSection,
+    'rich-text': FSXARichText
+  },
+  extends: [FSXABaseSection],
+  methods: {
+    getMedia() {
+      if (this.$attrs.payload.st_picture) {
+        return {
+          type: 'image',
+          src: this.$attrs.payload.st_picture.resolutions.ORIGINAL.url,
+          resolutions: this.$attrs.payload.st_picture.resolutions,
+          previewId: this.$attrs.payload.st_picture.previewId
+        }
+      } else {
+        return undefined
+      }
+    }
+  }
+}
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Finally we add the button. This one is a bit more complicated. We first need to define a button label and then a handler for a click on the button.</p>
+</div>
+<div class="paragraph">
+<p>The label is fairly straightforward. First, we add another function to the <code>methods</code> property.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">methods: {
+  getButtonText() {
+    return this.$attrs.payload.st_button
+      ? this.$attrs.payload.st_button.data.lt_button_text
+      : undefined
+  },
+  ...
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And then we call the function in our template</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    :kicker="this.$attrs.payload.st_kicker"
+    :headline="this.$attrs.payload.st_headline"
+    :text="this.$attrs.payload.st_text"
+    :button-text="getButtonText()"
+    :media="getMedia()"
+  &gt;
+  ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>For the click handler the TeaserSection component itself emits an event called <code>buttonClick</code> when the button is clicked. We can simply add an event handler to our template. First we define the function <code>handleButtonClick</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">  methods: {
+    getButtonText() {
+      return this.$attrs.payload.st_button
+        ? this.$attrs.payload.st_button.data.lt_button_text
+        : undefined
+    },
+    handleButtonClick() {
+      const pageId = this.$attrs.payload.st_button
+        ? this.$attrs.payload.st_button.data.lt_internal.referenceId
+        : undefined
+      this.$options.parent.triggerRouteChange({
+        pageId
+      })
+    },
+    ...
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And then we pass it to our template. We can use the <code>@</code> shorthand to define an event handler.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    :kicker="this.$attrs.payload.st_kicker"
+    :headline="this.$attrs.payload.st_headline"
+    :text="this.$attrs.payload.st_text"
+    :button-text="getButtonText()"
+    :media="getMedia()"
+    @buttonClick="handleButtonClick"
+  &gt;
+  ...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When you put everything together your final <code>Teaser.vue</code> file should look like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;teaser-section
+    :kicker="this.$attrs.payload.st_kicker"
+    :headline="this.$attrs.payload.st_headline"
+    :text="this.$attrs.payload.st_text"
+    :button-text="getButtonText()"
+    :media="getMedia()"
+    @buttonClick="handleButtonClick"
+  &gt;
+    &lt;template v-slot:headline="headline"&gt;
+      &lt;rich-text :content="headline" /&gt;
+    &lt;/template&gt;
+    &lt;template v-slot:text="text"&gt;
+      &lt;rich-text :content="text" /&gt;
+    &lt;/template&gt;
+  &lt;/teaser-section&gt;
+&lt;/template&gt;
+&lt;script&gt;
+import { FSXABaseSection, FSXARichText } from 'fsxa-pattern-library'
+import { Sections } from 'fsxa-ui'
+
+export default {
+  name: 'TeaserSection',
+  components: {
+    'teaser-section': Sections.TeaserSection,
+    'rich-text': FSXARichText
+  },
+  extends: [FSXABaseSection],
+  methods: {
+    getButtonText() {
+      return this.$attrs.payload.st_button
+        ? this.$attrs.payload.st_button.data.lt_button_text
+        : undefined
+    },
+    handleButtonClick() {
+      const pageId = this.$attrs.payload.st_button
+        ? this.$attrs.payload.st_button.data.lt_internal.referenceId
+        : undefined
+      this.$options.parent.triggerRouteChange({
+        pageId
+      })
+    },
+    getMedia() {
+      if (this.$attrs.payload.st_picture) {
+        return {
+          type: 'image',
+          src: this.$attrs.payload.st_picture.resolutions.ORIGINAL.url,
+          resolutions: this.$attrs.payload.st_picture.resolutions,
+          previewId: this.$attrs.payload.st_picture.previewId
+        }
+      } else {
+        return undefined
+      }
+    }
+  }
+}
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

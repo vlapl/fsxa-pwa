@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Configuration :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li><a href="index.html">FSXA PWA</a></li>
+    <li><a href="Configuration.html">Configuration</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Configuration</h1>
+<div class="sect1">
+<h2 id="_env_file"><a class="anchor" href="#_env_file"></a>.env-File</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The .env file allows you to provide required variables for the local build process. We recommend that you do not check them into your source code management. Ideally, you inject them later via your CI/CD process. If you are already using the CCD pipeline from e-Spirit, we will do this for you automatically.</p>
+</div>
+<div class="paragraph">
+<p>All of the following variables are required.</p>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_api_key_string"><a class="anchor" href="#_fsxa_api_key_string"></a>FSXA_API_KEY <code>string</code></h3>
+<div class="paragraph">
+<p>This API key is required by the PWA to obtain authorized access to the CaaS and navigation service. Our Customer Success Management team (<a href="mailto:team-csm@e-spirit.com">team-csm@e-spirit.com</a>) will be happy to provide you with this key after the successful provisioning of your FSXA environment.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_caas_string"><a class="anchor" href="#_fsxa_caas_string"></a>FSXA_CAAS <code>string</code></h3>
+<div class="paragraph">
+<p>The URL under which the CaaS can be reached. This URL is only used on the server and is not visible to the user in the client.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_navigation_service_string"><a class="anchor" href="#_fsxa_navigation_service_string"></a>FSXA_NAVIGATION_SERVICE <code>string</code></h3>
+<div class="paragraph">
+<p>The URL under which the navigation service is available. This URL is only used on the server and is not visible to the user in the client.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_project_id_string"><a class="anchor" href="#_fsxa_project_id_string"></a>FSXA_PROJECT_ID <code>string</code></h3>
+<div class="paragraph">
+<p>Several projects can be configured on your FirstSpirit server. In order for the PWA to know which data it needs to access, it needs the UUID of the relevant project.</p>
+</div>
+<div class="paragraph">
+<p>For the project(s) provided by e-Spirit you will be given this data too.</p>
+</div>
+<div class="paragraph">
+<p>For other projects you can look at <em>Project Properties</em> in <em>ServerManager</em>, then <em>Project Components</em>, then <em>CaaS Connect Project App</em>.</p>
+</div>
+<div class="paragraph">
+<p>Another way to access the project_id is by <a href="https://docs.e-spirit.com/odfs/template-develo/scripting/making-scripts/">adding the following script</a>:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>import de.espirit.firstspirit.agency.OperationAgent;
+import de.espirit.firstspirit.ui.operations.RequestOperation;
+
+message = context.requireSpecialist(OperationAgent.TYPE).getOperation(RequestOperation.TYPE);
+message.setTitle("Project UUID");
+message.setKind(RequestOperation.Kind.INFO);
+message.perform("Project UUID: " + context.project.uuid);</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Use the following <em>display logic</em> to only make the script menu entry visible to project admins:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>connection = context.userService.connection;
+return connection.user.isProjectAdmin(connection.project);</pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_tenant_id_string"><a class="anchor" href="#_fsxa_tenant_id_string"></a>FSXA_TENANT_ID <code>string</code></h3>
+<div class="paragraph">
+<p>The tenantId is used by the PWA to distinguish between the different FSXA environments provided to you.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_mode_preview_release"><a class="anchor" href="#_fsxa_mode_preview_release"></a>FSXA_MODE <code>"preview"</code> | <code>"release"</code></h3>
+<div class="paragraph">
+<p>We distinguish between preview and release data. This is the traditional FirstSpirit way. Specify here which data should be loaded by the PWA.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fsxa_config"><a class="anchor" href="#_fsxa_config"></a>fsxa.config</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The following settings allow easy configuration of the PWA.</p>
+</div>
+<div class="sect2">
+<h3 id="_general"><a class="anchor" href="#_general"></a>General</h3>
+<div class="sect3">
+<h4 id="_devmode"><a class="anchor" href="#_devmode"></a>devMode</h4>
+<div class="paragraph">
+<p>The <code>DevMode</code> helps you to quickly build new components or adapt existing ones. See <a href="#GettingStarted/index.adoc" class="page unresolved">Getting Started</a> for screenshots and more details.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_defaultlocale"><a class="anchor" href="#_defaultlocale"></a>defaultLocale</h4>
+<div class="paragraph">
+<p>Normally the current URL is used to find out the language. If this is not possible (for example, when a user calls <code>/</code>) the <code>defaultLocale</code> is used to retrieve the navigation data via the <code>FSXA API</code>. This property is required.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_components"><a class="anchor" href="#_components"></a>Components</h3>
+<div class="paragraph">
+<p>The components are automatically loaded and mapped.
+It is important to note the following aspects:</p>
+</div>
+<div class="paragraph">
+<p>File names should be defined in camelCase. These are subsequently converted to snake_case. Folders are also mapped and separate the converted identifier with a <code>.</code>. The exception here is the <code>index</code> file. This leads to the following mapping:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>teaser.tsx</code> → <code>teaser</code></p>
+</li>
+<li>
+<p><code>Teaser/index.vue</code> → <code>teaser</code></p>
+</li>
+<li>
+<p><code>NewsTeaserSection.tsx</code> → <code>news_teaser_section</code></p>
+</li>
+<li>
+<p><code>InterestingFacts/index.tsx</code> → <code>interesting_facts</code></p>
+</li>
+<li>
+<p><code>InterestingFacts/SubComponent.tsx</code> → <code>interesting_facts.sub_component</code></p>
+</li>
+<li>
+<p><code>InterestingFacts/components/Counter.vue</code> → <code>interesting_facts.components.counter</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can override this automatism by creating an <code>index.ts</code> / <code>index.js</code> in the configured folder.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import MyCustomTeaserComponent from '...'
+import Counter from '...'
+
+export default {
+  teaser: MyCustomTeaserComponent,
+  'interesting_facts.components.counter': Counter
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_project_folders"><a class="anchor" href="#_project_folders"></a>Project Folders</h3>
+<div class="paragraph">
+<p><strong>The folders configured by the following settings are automatically searched for files with the extensions <code>.vue</code>, <code>.tsx</code>, <code>.jsx</code> and <code>.ts</code>.</strong></p>
+</div>
+<div class="sect3">
+<h4 id="_sections"><a class="anchor" href="#_sections"></a>Sections</h4>
+<div class="paragraph">
+<p><code>components.sections</code> - optional</p>
+</div>
+<div class="paragraph">
+<p>The folder, where all your section components are located.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>We recommend you to derive from <a href="components/FSXABaseSection.html" class="page">FSXABaseSection</a> to get access to useful functionality and add TypeScript support.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>Default</strong>: <code>"~/components/fsxa/sections"</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_layouts"><a class="anchor" href="#_layouts"></a>Layouts</h4>
+<div class="paragraph">
+<p><code>components.layouts</code> - optional</p>
+</div>
+<div class="paragraph">
+<p>The folder, where all your layout components are located.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>We recommend you to derive from FSXABaseLayout to get access to useful functionality and add TypeScript support.</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p><strong>Default</strong>: <code>"~/components/fsxa/layouts"</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_richtext"><a class="anchor" href="#_richtext"></a>RichText</h4>
+<div class="paragraph">
+<p><code>components.richtext</code> - optional</p>
+</div>
+<div class="paragraph">
+<p>The folder, where all your richtext components are located.</p>
+</div>
+<div class="paragraph">
+<p><strong>Default</strong>: <code>"~/components/fsxa/richtext"</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>We recommend you to derive from FSXABaseRichTextElement to get access to useful functionality and add TypeScript support.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_applayout"><a class="anchor" href="#_applayout"></a>AppLayout</h4>
+<div class="paragraph">
+<p><code>components.appLayout</code> <em>optional</em></p>
+</div>
+<div class="paragraph">
+<p>You have the option to specify an AppLayout component that is rendered as a global wrapper around your mapped content.</p>
+</div>
+<div class="paragraph">
+<p>This setting is optional. <strong>Default</strong>: <code>undefined</code></p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>We recommend you to derive from FSXABaseAppLayout to get access to useful functionality and add TypeScript support.</p>
+</div>
+</blockquote>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_loader"><a class="anchor" href="#_loader"></a>Loader</h4>
+<div class="paragraph">
+<p><code>components.loader</code> <em>optional</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Default</strong>: <code>undefined</code></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_customroutes"><a class="anchor" href="#_customroutes"></a>CustomRoutes</h4>
+<div class="paragraph">
+<p><code>customRoutes</code> <em>optional</em></p>
+</div>
+<div class="paragraph">
+<p>This setting configures the folder in which your own endpoints are located. The automatism loads files with the extensions ts and js. You can learn more in the section <a href="#advanced/custom-api-routes/index.adoc" class="page unresolved">CustomRoutes</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_loglevel"><a class="anchor" href="#_loglevel"></a>LogLevel</h4>
+<div class="paragraph">
+<p><code>logLevel</code> <em>optional</em></p>
+</div>
+<div class="paragraph">
+<p>Possible log levels: <code>0</code> = Info, <code>1</code> = Log, <code>2</code> = Warning, <code>3</code> = Error, <code>4</code> = None. The default is <code>3</code>.</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>These settings can be configured in the following ways:</p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_fsxa_config_ts_fsxa_config_js"><a class="anchor" href="#_fsxa_config_ts_fsxa_config_js"></a>fsxa.config.ts / fsxa.config.js</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{
+  devMode: true,
+  defaultLocale: "de_DE"
+  // each of the entries is optional
+  // default values mentioned above will be used
+  components: {
+    sections: "~/components/fsxa/sections",
+    layouts: "~/components/fsxa/layouts",
+    richtext: "~/components/fsxa/richtext",
+  },
+  customRoutes: '~/customRoutes',
+  logLevel: 3
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nuxt_config"><a class="anchor" href="#_nuxt_config"></a>nuxt.config</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">{
+  ...,
+  fsxa: {
+    devMode: true,
+    defaultLocale: "de_DE"
+    // each of the entries is optional
+    // default values mentioned above will be used
+    components: {
+      sections: "~/components/fsxa/sections",
+      layouts: "~/components/fsxa/layouts",
+      richtext: "~/components/fsxa/richtext",
+    },
+  customRoutes: '~/customRoutes',
+  logLevel: 3
+  },
+  ...
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

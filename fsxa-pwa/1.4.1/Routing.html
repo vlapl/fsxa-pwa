@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Routing :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.4.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.4.1</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li><a href="index.html">FSXA PWA</a></li>
+    <li><a href="Routing.html">Routing</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Routing</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><a href="#_firstspirit_navigation_service">FirstSpirit Navigation Service</a></p>
+</li>
+<li>
+<p><a href="#_basic_routing_principles">Basic Routing Principles</a></p>
+</li>
+<li>
+<p><a href="#_the_triggerroutechange_function">The triggerRouteChange Function</a></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_firstspirit_navigation_service"><a class="anchor" href="#_firstspirit_navigation_service"></a>FirstSpirit Navigation Service</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The FSXA-PWA directly maps the navigation structure of the underlying FirstSpirit project into the predefined navigation component. This is achieved using the navigation service which maps all of the routes as defined in FirstSpirit to CaaS URLs. The data is fetched by the <a href="https://github.com/e-Spirit/fsxa-api">FSXA-API</a>. Here is an example of navigation data.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">  "c8a158a3-2ba3-427c-a7e4-7d41d9844464": {
+      "id": "c8a158a3-2ba3-427c-a7e4-7d41d9844464",
+      "parentIds": [
+          "5a7cdf48-5031-4fcd-b6c7-99e802d0ce57"
+      ],
+      "label": "Home",
+      "contentReference": "https://url.to.your.content",
+      "caasDocumentId": "c8a158a3-2ba3-427c-a7e4-7d41d9844464",
+      "seoRoute": "/Home/",
+      "seoRouteRegex": null,
+      "customData": null
+  },
+  "aa684dc6-2220-4d71-b468-f3e056b0c4f0": {
+      "id": "aa684dc6-2220-4d71-b468-f3e056b0c4f0",
+      "parentIds": [],
+      "label": "Our Solutions",
+      "contentReference": "https://url.to.your.content",
+      "caasDocumentId": "4bd4e5af-c55d-4b46-b335-58e284f2f4c6",
+      "seoRoute": "/Our-Solutions/",
+      "seoRouteRegex": null,
+      "customData": null
+  },</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>It contains labels and contentReferences which you can use to fill a navigation menu or sitemap.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_basic_routing_principles"><a class="anchor" href="#_basic_routing_principles"></a>Basic Routing Principles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In Nuxt.js <a href="https://nuxtjs.org/docs/2.x/get-started/routing">routing</a> works via convention. Usually you can link to any pages you may have created in the <code>pages</code> folder using the <code>Nuxt-Link</code> component. It has a prop called <code>to</code> that takes a route as parameter. If you have subfolders in the <code>pages</code> folder you can add them to the route as well. You can also use this feature to override pages defined by the navigation service by adding a page with the same pageId as an existing page.</p>
+</div>
+<div class="paragraph">
+<p>SFC Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;div&gt;
+    &lt;NuxtLink to="/"&gt;Home page&lt;/NuxtLink&gt;
+    &lt;NuxtLink to="/myPage"&gt;Links to MyPage.vue in the pages folder &lt;/NuxtLink&gt;
+    &lt;NuxtLink to="/aboutPages/myAboutPage"&gt;Links to MyAboutPage.vue in the pages/aboutPages folder.&lt;/NuxtLink&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import { Component as TsxComponent } from 'vue-tsx-support'
+import { RouterLinkProps } from 'vue-tsx-support/options/enable-vue-router'
+
+declare global {
+  const NuxtLink: TsxComponent&lt;RouterLinkProps | { prefetch: boolean, noPrefetch: boolean}&gt;
+}
+
+@Component({
+  name: 'MyComponent'
+})
+class MyComponent extends TsxComponent&lt;{ MyProps }&gt; {
+  render(){
+    return (
+      &lt;div&gt;
+        &lt;NuxtLink to="/"&gt;Home page&lt;/NuxtLink&gt;
+        &lt;NuxtLink to="/myPage"&gt;Links to MyPage.vue in the pages folder &lt;/NuxtLink&gt;
+        &lt;NuxtLink to="/aboutPages/myAboutPage"&gt;Links to MyAboutPage.vue in the pages/aboutPages folder.&lt;/NuxtLink&gt;
+      &lt;/div&gt;
+    )
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However since routing is slightly more complex in the context of the FSXA-PWA, we recommend using the [triggerRouteChange function](the-triggerroutechange-function) in a click event handler of the <code>&lt;nuxt-link&gt;</code> component or a simple <code>&lt;a&gt;</code> tag. Using this function, you can still define your own pages and override existing ones. With the added advantage of being able to link to pages in the navigation structure and switching the locale. Using it inside an <code>&lt;a&gt;</code> or <code>&lt;nuxt-link&gt;</code> allows users who have javascript disabled to still use the links.</p>
+</div>
+<div class="sect2">
+<h3 id="_dynamic_pages"><a class="anchor" href="#_dynamic_pages"></a>Dynamic Pages</h3>
+<div class="paragraph">
+<p>You can also define pages that use an unknown subroute like for example <code>/books/:title</code> where title can be anything.
+To do so, you need to name the file <code>_slug.vue</code>. So for the example mentioned above the directory structure would be the following</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>/pages
+|__/books
+   |__ _slug.(vue/tsx)</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the <code>_slug.(vue/tsx)</code> file you can access the unknown route parameter like this</p>
+</div>
+<div class="paragraph">
+<p>SFC Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;h1&gt;{{ this.book }} / {{ this.slug }}&lt;/h1&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+  export default {
+    async asyncData({ params }) {
+      return {
+        book : params.book
+        slug : params.slug
+      }
+    }
+  }
+&lt;/script&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import { Component as TsxComponent } from 'vue-tsx-support'
+import Component from 'vue-class-component'
+
+@Component({
+  name: 'MySlugPage',
+  asyncData: async ( { params } ) =&gt; {
+    return {
+      book: params.book
+      slug: params.slug
+    }
+  }
+})
+class MySlugPage extends TsxComponent&lt;{}&gt;{
+  slug: string = ""
+
+  render(){
+    return (
+      &lt;h1&gt;{this.book} / {this.slug}&lt;/h1&gt;
+    )
+  }
+}
+export default MySlugPage</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_triggerroutechange_function"><a class="anchor" href="#_the_triggerroutechange_function"></a>The triggerRouteChange Function</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When you implement a component that extends <a href="components/FSXABaseComponent.html" class="page">FSXABaseComponent</a> (or one of its derived classes)you get access to the <code>triggerRouteChange</code> function. You can either pass it a FirstSpirit <code>pageId</code>, a <code>route</code> (like in the <code>&lt;NuxtLink&gt;</code> component) or a <code>locale</code>. If you pass it a locale it will cause your app to stay on the same page but change the language.</p>
+</div>
+<div class="paragraph">
+<p>SFC Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;template&gt;
+  &lt;a href="#"
+    v-on:click="handleClick($event, '/')"
+  &gt;Home Page&lt;/a&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In your script tag where you define your component props, data and methods you will have to define the handleClick method like this.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">//...
+methods: {
+  handleClick(event, route) {
+    event.preventDefault()
+    this.triggerRouteChange({
+      route
+    })
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>TSX Example</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">render(){
+  return(
+    &lt;a href="#"
+      onclick={(event) =&gt; {
+        event.preventDefault()
+        this.triggerRouteChange({
+          {
+            route: "/"
+          }
+        })
+      }}
+    &gt;Home Page&lt;/a&gt;
+  )
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

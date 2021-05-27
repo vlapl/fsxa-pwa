@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-api" data-version="5.3">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA API</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/index.html">FSXA PWA</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/GettingStarted.html">Getting Started</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/GettingStarted/MyFirstTemplate.html">My First Template</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/GettingStarted/CustomCSS.html">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/GettingStarted/ChangingtheAppLayout.html">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Configuration.html">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Configuration.html#_env_file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Configuration.html#_fsxa_config">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/VuexStore.html">The Vuex Store</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/DevMode.html">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Routing.html">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Richtext.html">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/css.html">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/css/Component.html">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/css/RemovingTailwind.html">Removing Tailwind CSS for your Project</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/ProjectProperties.html">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html">Working with Images</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html#_introduction">Introduction</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html#_working_with_caas">Working with CaaS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html#resolutions-in-firstspirit">Resolutions in FirstSpirit</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html#_responsiveness">Responsiveness</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html#_lazy_loading">Lazy Loading</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/WorkingWithImages.html#_sourcesets">SourceSets</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/Caching.html">Caching</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/SSR.html">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/RemovingPresets.html">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/components.html">Base Components</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/components/FSXABaseComponent.html">FSXABaseComponent</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/components/FSXABaseLayout.html">FSXABaseLayout</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/components/FSXABaseSection.html">FSXABaseSection</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/components/FSXABaseRichTextElement.html">FSXABaseRichTextElement</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/components/FSXABaseAppLayout.html">FSXABaseAppLayout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced.html">Advanced</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/TPP-Snap.html">TPP-Snap</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/TPP-Snap.html#nested_elements">Nested Elements</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/TPP-Snap.html#inline_editing">Inline-Editing</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/custom-api-routes.html">Custom API Routes</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/custom-api-routes/CustomSitemap.html">Example 1: Custom Sitemap</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/custom-api-routes/AccessingOtherProjects.html">Example 2:Accessing other FS-Projects</a>
+  </li>
+  <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/custom-api-routes/SendingMails.html">Example 3: Sending Mails</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../../fsxa-pwa/1.4.1/advanced/SEO.html">SEO</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA API</span>
+    <span class="version">5.3</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pwa/1.4.1/index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pwa/1.4.1/index.html">1.4.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../fsxa-pwa/1.4.1/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA API</a></li>
+    <li><a href="index.html">FSXA-Api</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_fsxa_api"><a class="anchor" href="#_fsxa_api"></a>FSXA-API</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The FSXA-API is an interface handling data coming from the FirstSpirit
+<a href="https://docs.e-spirit.com/module/caas/CaaS_Product_Documentation_EN.html">CaaS</a> and the
+Navigation Service. The data is processed and transformed to suit the needs of
+the <a href="https://github.com/e-Spirit/fsxa-pattern-library">FSXA-Pattern-Library</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#about-the-fsxa">1. About the FSXA</a></p>
+</li>
+<li>
+<p><a href="#legal-notices">2. Legal Notices</a></p>
+</li>
+<li>
+<p><a href="#methods">3. Methods</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#constructor">Constructor</a></p>
+</li>
+<li>
+<p><a href="#setconfiguration">setConfiguration</a></p>
+</li>
+<li>
+<p><a href="#config">config</a></p>
+</li>
+<li>
+<p><a href="#buildauthorizationheaders">buildAuthorizationHeaders</a></p>
+</li>
+<li>
+<p><a href="#buildcaasurl">buildCaaSURL</a></p>
+</li>
+<li>
+<p><a href="#buildnavigationserviceurl">buildNavigationServiceUrl</a></p>
+</li>
+<li>
+<p><a href="#fetchelement">fetchElement</a></p>
+</li>
+<li>
+<p><a href="#fetchbyfilter">fetchByFilter</a></p>
+</li>
+<li>
+<p><a href="#fetchprojectproperties">fetchProjectProperties</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#filter">4. Filter</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#logical-query-operators">LogicalFilter</a></p>
+</li>
+<li>
+<p><a href="#comparison-query-operators">ComparisonFilter</a></p>
+</li>
+<li>
+<p><a href="#array-query-operators">ArrayFilter</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#disclaimer">5. Disclaimer</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_about_the_fsxa"><a class="anchor" href="#_about_the_fsxa"></a>About the FSXA</h3>
+<div class="paragraph">
+<p>The FirstSpirit Experience Accelerator (FSXA) is the hybrid solution of a digital
+experience platform, combining a headless approach with enterprise capabilities.
+If you are interested in the FSXA check this
+<a href="https://docs.e-spirit.com/module/fsxa/overview/benefits-hybrid/index.html">Overview</a>. You can order
+a demo <a href="https://www.e-spirit.com/us/specialpages/forms/on-demand-demo/">online</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>Legal Notices</h3>
+<div class="paragraph">
+<p>FSXA-API is a product of <a href="http://www.e-spirit.com">e-Spirit AG</a>, Dortmund, Germany.
+The FSXA-API is subject to the Apache-2.0 license.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_methods"><a class="anchor" href="#_methods"></a>Methods</h3>
+<div class="paragraph">
+<p>In this section all available methods will be explained using examples.</p>
+</div>
+<div class="sect3">
+<h4 id="_constructor"><a class="anchor" href="#_constructor"></a>Constructor</h4>
+<div class="paragraph">
+<p>To be able to use the FSXA-API, a new object must be created.
+How you create the object depends on how you want to use the FSXA-API.</p>
+</div>
+<div class="paragraph">
+<p>If you want to use the information provided by the CaaS in your frontend, you have to use the <code>proxy</code> mode.<br>
+If you want to use it in your server, you have to use the <code>remote</code> mode.</p>
+</div>
+<div class="paragraph">
+<p>However, to have a fully running application, we recommend using the FSXA-API in your server as well as in your frontend.</p>
+</div>
+<div class="paragraph">
+<p>In each case you have to specify the content mode, the configuration and optionally the log level.</p>
+</div>
+<div class="paragraph">
+<p>The config mode can be <code>preview</code> or <code>release</code>. It depends on which information you want to get.
+There is an enum to use these modes.
+<code>FSXAContentMode.PREVIEW</code> for <code>preview</code>
+<code>FSXAContentMode.RELEASE</code> for <code>release</code></p>
+</div>
+<div class="paragraph">
+<p>The configuration depends on which in which mode you want to run the FSXA-API.</p>
+</div>
+<div class="paragraph">
+<p>If you want to use the <code>remote</code> mode, you have to specify all authorization keys:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    mode: "remote",
+    config: {
+            apiKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            navigationService: "https://your.navigation-service.url/navigation",
+            caas: "https://your.caas.url",
+            projectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            tenantId: "your-tenant-id"
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to use the <code>proxy</code> mode, you have to specify the baseURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    mode: 'proxy',
+    baseUrl: 'http://localhost:3001/api'
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Be aware that in the case of <code>proxy</code> mode the baseURL should point to a proxy server that knows and appends the apikey of the FirstSpirit CaaS.</p>
+</div>
+<div class="paragraph">
+<p>The log level can be:
+<code>0</code> = Info
+<code>1</code> = Log
+<code>2</code> = Warning
+<code>3</code> = Error
+<code>4</code> = None. The default is set to <code>3</code>.</p>
+</div>
+<div class="paragraph">
+<p>Here is an example of how the FSXA-API could be used with an <a href="https://expressjs.com/">Express.js</a> backend.
+Make sure you have <code>cross-fetch</code>, <code>express</code>, <code>cors</code>, <code>lodash</code> and of course <code>fsxa-api</code> installed.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">require("cross-fetch/polyfill")
+const express = require('express')
+const {FSXAApi, FSXAContentMode, } = require("fsxa-api");
+const expressIntegration = require("fsxa-api/dist/lib/integrations/express").default
+const cors = require("cors")
+
+const app = express()
+
+const remoteApi = new FSXAApi(
+    FSXAContentMode.PREVIEW,
+    {
+        mode: "remote",
+        config: {
+            apiKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            navigationService: "https://your.navigation-service.url/navigation",
+            caas: "https://your.caas.url",
+            projectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            tenantId: "your-tenant-id"
+        }
+    },
+    3
+)
+
+app.use(cors())
+app.use("/api", expressIntegration({ api: remoteApi }))
+
+app.listen(3001, () =&gt; {
+  console.log('Listening at http://localhost:3001')
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here is an example of the corresponding usage in a frontend application:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">const fsxaApi = new FSXAApi(
+    FSXAContentMode.PREVIEW,
+    {
+        mode: 'proxy',
+        baseUrl: 'http://localhost:3001/api'
+    },
+    1
+)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_setconfiguration"><a class="anchor" href="#_setconfiguration"></a>setConfiguration</h4>
+<div class="paragraph">
+<p>The configuration of the FSXA-API can be set via a method.</p>
+</div>
+<div class="paragraph">
+<p>The config mode can be <code>preview</code> or <code>release</code>. It depends on which information you want to get.
+There is an enum to use these modes.
+<code>FSXAContentMode.PREVIEW</code> for <code>preview</code>
+<code>FSXAContentMode.RELEASE</code> for <code>release</code></p>
+</div>
+<div class="paragraph">
+<p>The config data depends on which in which mode you want to run the FSXA-API.</p>
+</div>
+<div class="paragraph">
+<p>If you want to use the <code>remote</code> mode, you have to specify all authorization keys:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    mode: "remote",
+    config: {
+            apiKey: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            navigationService: "https://your.navigation-service.url/navigation",
+            caas: "https://your.caas.url",
+            projectId: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+            tenantId: "your-tenant-id"
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If you want to use the <code>proxy</code> mode, you have to specify the baseURL:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{
+    mode: 'proxy',
+    baseUrl: 'http://localhost:3001/api'
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Be aware that in the case of <code>proxy</code> mode the baseURL should point to a proxy server that knows and appends the apikey of the FirstSpirit CaaS.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.setConfiguration({
+  FSXAContentMode.RELEASE,
+  {
+    mode: "remote",
+        config: {
+            apiKey: "xxxx-xxxx-xxxx-xxxx",
+            navigationService: "https://your.navigation.service",
+            caas: "https://your.caas.service",
+            projectId: "xxx-xxxx-xxx",
+            tenantId: "your-tentant-id"
+        }
+  }
+})</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_config"><a class="anchor" href="#_config"></a>config</h4>
+<div class="paragraph">
+<p>Returns the current configuration when the mode is set to <code>remote</code>.
+If the mode is set to <code>proxy</code>, this method returns <code>null</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.config()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_buildauthorizationheaders"><a class="anchor" href="#_buildauthorizationheaders"></a>buildAuthorizationHeaders</h4>
+<div class="paragraph">
+<p>Returns the build authorization header in the following format when mode is set to <code>remote</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">{ authorization: 'apikey="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"' }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Returns an empty object when mode is set to <code>proxy</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.buildAuthorizationHeaders()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_buildcaasurl"><a class="anchor" href="#_buildcaasurl"></a>buildCaaSURL</h4>
+<div class="paragraph">
+<p>Returns the build CaaS url when mode is set to <code>remote</code>:</p>
+</div>
+<div class="paragraph">
+<p>Returns an empty string when mode is set to <code>proxy</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.buildCaaSUrl()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_buildnavigationserviceurl"><a class="anchor" href="#_buildnavigationserviceurl"></a>buildNavigationServiceUrl</h4>
+<div class="paragraph">
+<p>Returns the build navigation-service url when mode is set to <code>remote</code>:</p>
+</div>
+<div class="paragraph">
+<p>Returns an empty string when mode is set to <code>proxy</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.buildNavigationServiceUrl()</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_fetchelement"><a class="anchor" href="#_fetchelement"></a>fetchElement</h4>
+<div class="paragraph">
+<p>Returns the corresponding CaaS data entry.</p>
+</div>
+<div class="paragraph">
+<p>Expects as input parameter an id, which is described in CaaS as `identifier' and a language abbreviation.
+Optionally additional parameters can be passed that will be appended to the CaaS-Url. Be aware that the response is not mapped if you pass the keys-parameter. For more information please refer to the <a href="https://restheart.org/docs/read-docs/#projection">restheart documentation</a>.</p>
+</div>
+<div class="paragraph">
+<p>In this example the additional parameters ensure that only the fields <code>identifier</code> and <code>displayName</code> are in the result set:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.fetchElement(
+    "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+    "en-EN",
+    {"keys": [{'identifier': 1}, {'displayName': 1}]}
+)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_fetchbyfilter"><a class="anchor" href="#_fetchbyfilter"></a>fetchByFilter</h4>
+<div class="paragraph">
+<p>Returns the matching CaaS data entries.</p>
+</div>
+<div class="paragraph">
+<p>Expects as input parameter an array of filters and a language abbreviation.
+Optionally a page number, page size and additional parameters can be passed.</p>
+</div>
+<div class="paragraph">
+<p>Several filter objects can be specified in the filter array, the results will then correspond to all specified filters.</p>
+</div>
+<div class="paragraph">
+<p>One filter object must have a:
+<code>field</code> which specifies the searched key,
+<code>operator</code> which specifies the search operation,
+<code>value</code> which specifies the value that is looked for.</p>
+</div>
+<div class="paragraph">
+<p><a href="#filter">More information to the filters</a></p>
+</div>
+<div class="paragraph">
+<p>In this example we search for all elements with the <code>fsType</code> equals <code>Example</code>. We want the <code>2nd</code> page with a maximum of <code>50</code> entries. However, we do not want the <code>identifier</code> to appear:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.fetchByFilter(
+    [
+      {
+        field: "fsType",
+        operator: ComparisonQueryOperatorEnum.EQUALS,
+        value: "Example"
+      }
+    ],
+    "en",
+    2,
+    50,
+    {"keys": {"identifier": 0}}
+)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_fetchprojectproperties"><a class="anchor" href="#_fetchprojectproperties"></a>fetchProjectProperties</h4>
+<div class="paragraph">
+<p>Returns the project properties of the given language.</p>
+</div>
+<div class="paragraph">
+<p>Expects as input parameter the language abbreviation.</p>
+</div>
+<div class="paragraph">
+<p>ATTENTION: Works only with CaaSConnect module version 3 onwards.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">fsxaApi.fetchProjectProperties("en_EN")</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_filter"><a class="anchor" href="#_filter"></a>Filter</h3>
+<div class="paragraph">
+<p>You can customize your queries in the <a href="#fetchbyfilter">fetchByFilter</a> method with these operations. For more information please refer to the MongoDB documentation. Links are provided in each section.</p>
+</div>
+<div class="sect3">
+<h4 id="_logical_query_operators"><a class="anchor" href="#_logical_query_operators"></a>Logical Query Operators</h4>
+<div class="paragraph">
+<p>These operators can also be found in the <a href="https://docs.mongodb.com/manual/reference/operator/query-logical/">MongoDB Documentation</a></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Enum</th>
+<th class="tableblock halign-left valign-top">Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.AND</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$and</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.NOT</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$not</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.NOR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$nor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.OR</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$or</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_comparison_query_operators"><a class="anchor" href="#_comparison_query_operators"></a>Comparison Query Operators</h4>
+<div class="paragraph">
+<p>These operators can also be found in the <a href="https://docs.mongodb.com/manual/reference/operator/query-comparison/">MongoDB Documentation</a></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Enum</th>
+<th class="tableblock halign-left valign-top">Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.GREATER_THAN_EQUALS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$gte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.GREATER_THAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$gt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.EQUALS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$eq</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.IN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$in</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.LESS_THAN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$lt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.LESS_THAN_EQUALS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$lte</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.NOT_EQUALS</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$ne</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">LogicalQueryOperatorEnum.NOT_IN</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$nin</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_array_query_operators"><a class="anchor" href="#_array_query_operators"></a>Array Query Operators</h4>
+<div class="paragraph">
+<p>These operators can also be found in the <a href="https://docs.mongodb.com/manual/reference/operator/query-array/">MongoDB Documentation</a></p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Enum</th>
+<th class="tableblock halign-left valign-top">Operation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ArrayQueryOperatorEnum.ALL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">$all</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_disclaimer"><a class="anchor" href="#_disclaimer"></a>Disclaimer</h3>
+<div class="paragraph">
+<p>This document is provided for information purposes only.
+e-Spirit may change the contents hereof without notice.
+This document is not warranted to be error-free, nor subject to any
+other warranties or conditions, whether expressed orally or
+implied in law, including implied warranties and conditions of
+merchantability or fitness for a particular purpose. e-Spirit
+specifically disclaims any liability with respect to this document
+and no contractual obligations are formed either directly or
+indirectly by this document. The technologies, functionality, services,
+and processes described herein are subject to change without notice.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

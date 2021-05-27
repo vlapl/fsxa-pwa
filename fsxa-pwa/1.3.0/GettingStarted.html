@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: FSXA JavaScript Frontend</title>
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../_/css/site.css">
+    <script>var uiRootPath = '../../_'</script>
+    <link rel="icon" href="../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <h1 class="navbar-brand">
+      <a class="navbar-item" href="../..">FSXA JavaScript Frontend</a>
+    </h1>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="fsxa-pwa" data-version="1.3.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="index.html">FSXA-PWA</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">FSXA PWA</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="index.html">Index</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="Introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_general">General</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_projects_used">Projects used</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_architecture">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="Introduction.html#_deployment">Deployment</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="GettingStarted.html">Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#_my_first_template">My First Template</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_custom_css">Adding CSS</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#_changing_the_app_layout">Changing the App Layout</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Configuration.md">Configuration</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Configuration.md#env-file">.env File</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Configuration.md#fsxaconfig">fsxa.config</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Vuex-Store</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:DevMode.md">DevMode</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Routing.md">Routing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:Richtext.md">Working with Richtext</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="#fsxa-pwa:ROOT:css/index.md">Custom CSS</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:css/Component.md">Adding Custom CSS to your Component</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:css/RemovingTailwind.md">Removing TailwindCSS</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:ProjectProperties.md">ProjectProperties</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Global Content</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Working with Images</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <span class="nav-text">Caching (StoredContent, TTL)</span>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:SSR.md">Server Side Rendering (SSR)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#fsxa-pwa:ROOT:RemovingPresets.md">Removing Presets</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="#:ROOT:components/index.md">Base Components</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-api/5.3/index.html">FSXA-Api</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FSXA-PWA</span>
+    <span class="version">1.3.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../fsxa-api/5.3/index.html">FSXA API</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-api/5.3/index.html">5.3</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-nuxt-module/3.3.1/index.html">FSXA Nuxt Module</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-nuxt-module/3.3.1/index.html">3.3.1</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-pattern-library/3.3.0/index.html">FSXA Pattern Library</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-pattern-library/3.3.0/index.html">3.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="index.html">1.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="index.html">FSXA-PWA</a></li>
+    <li>FSXA PWA</li>
+    <li><a href="GettingStarted.html">Getting Started</a></li>
+  </ul>
+</nav>
+<a href="../../index.html.de">German version</a>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="paragraph">
+<p><a href="../../README.md">Readme</a> » Getting Started</p>
+</div>
+<div class="sect1">
+<h2 id="_getting_started"><a class="anchor" href="#_getting_started"></a>Getting Started</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide describes how you can implement your first template, how to add custom CSS styling and how to change the app layout.</p>
+</div>
+<div class="sect2">
+<h3 id="_my_first_template"><a class="anchor" href="#_my_first_template"></a>My First Template</h3>
+<div class="paragraph">
+<p>This chapter describes how to set up the project and complete the first steps.</p>
+</div>
+<div class="sect3">
+<h4 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h4>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://nodejs.org/en/">node</a> - latest LTS Version: 14.15.5.</p>
+</li>
+<li>
+<p>A text editor - like <a href="https://code.visualstudio.com/">VS Code</a> with the <a href="https://marketplace.visualstudio.com/items?itemName=octref.vetur">Vetur</a> plugin.</p>
+</li>
+<li>
+<p>A terminal - like VS Code’s integrated <a href="https://code.visualstudio.com/docs/editor/integrated-terminal">terminal</a></p>
+</li>
+<li>
+<p><a href="https://git-scm.com/">Git</a> - latest major version: &gt; 2.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_setting_up_the_project"><a class="anchor" href="#_setting_up_the_project"></a>Setting up the project</h4>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open the terminal and if needed, navigate to your preferred directory where the project should be saved.</p>
+</li>
+<li>
+<p>Clone the project using the terminal command <code>git clone <a href="https://github.com/e-Spirit/fsxa-pwa.git" class="bare">https://github.com/e-Spirit/fsxa-pwa.git</a></code>. The project should be downloaded into a folder called <code>fsxa-pwa</code>.</p>
+</li>
+<li>
+<p>Navigate to the newly created folder with <code>cd fsxa-pwa</code>.</p>
+</li>
+<li>
+<p>Copy the existing <code>.env.template</code> file and paste it with the new name <code>.env</code> or simply run the command <code>cp .env.template .env</code>.</p>
+</li>
+<li>
+<p>The .env file must contain all the information you need to access your own system. You can get this information from your contact at e-Spirit AG. By default, this file is located in the <code>.gitignore</code> and is therefore not persisted. Each required attribute is explained briefly, for a more detailed description please check the <a href="../Configuration.md">configuration page</a>.</p>
+</li>
+<li>
+<p>To install the needed dependencies run the command <code>npm install</code>.</p>
+</li>
+<li>
+<p>After all dependencies are installed, you can start a local development server with <code>npm run dev</code>.</p>
+</li>
+<li>
+<p>After the server is started, it can be accessed at <a href="http://localhost:3000" class="bare">http://localhost:3000</a> in your browser.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_development_mode"><a class="anchor" href="#_development_mode"></a>Development mode</h4>
+<div class="paragraph">
+<p>There is a development mode that helps to easily map the content coming from the <a href="https://docs.e-spirit.com/module/caas/CaaS_FSM_Documentation_EN.html">CaaS</a>.</p>
+</div>
+<div class="paragraph">
+<p>To enable the development mode, the variable <code>devMode</code> must be set to <code>true</code> in the <code>fsxa.config.ts</code> file. Be aware that you have to restart the server when you change anything in this file. This file is also checked into git. So be sure to change the variable back to <code>false</code> before deploying to production.</p>
+</div>
+<div class="paragraph">
+<p>If you are in development mode and a component on the page has not been developed yet, you will get an info box which shows exactly which component is missing and what information in the component can be addressed.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/WritingComponents/MissingLayout.png" alt="Missing Layout"></span></p>
+</div>
+<div class="paragraph">
+<p>If you are in development mode and you have already implemented the component, then you will see question marks when hovering over the element.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/WritingComponents/QuestionMark.png" alt="QuestionMark"></span></p>
+</div>
+<div class="paragraph">
+<p>Clicking on this question mark will provide you with more information about which component is being displayed and what data is available.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_writing_components"><a class="anchor" href="#_writing_components"></a>Writing components</h4>
+<div class="paragraph">
+<p>In this section we will be exploring how to go about implementing a missing Teaser section.</p>
+</div>
+<div class="paragraph">
+<p>When you go to the home page in the development mode, you will see that one component is missing.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/WritingComponents/MissingSection.png" alt="MissingSection"></span></p>
+</div>
+<div class="paragraph">
+<p>This infobox tells us that the app expects a component of type <code>Section</code>. We can also see that the key of this missing section is <code>teaser</code>.</p>
+</div>
+<div class="paragraph">
+<p>In the <code>fsxa.config.ts</code> file we can see that our section components are located in <code>~/components/fsxa/sections</code>.
+That’s where you want to create a new file for the component.</p>
+</div>
+<div class="paragraph">
+<p>Make sure, that you name the file just like the key that is required. In our case it is <code>teaser</code> so we name our new file <code>Teaser.tsx</code>.</p>
+</div>
+<div class="paragraph">
+<p>Next we need to import two classes that are required to define our new component:</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx import Component from 'vue-class-component' import { FSXABaseSection } from 'fsxa-pattern-library'</code></p>
+</div>
+<div class="paragraph">
+<p>With this we can start writing our class.</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx @Component class TeaserSection extends FSXABaseSection&lt;{}&gt; {}</code></p>
+</div>
+<div class="paragraph">
+<p>This class expects us to implement <code>render</code> function. This function describes which HTML will be displayed in our component.
+To keep things simple for now we will write just a simple <code>render</code> function to see if our component is recognized.</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx render() {   return &lt;div&gt;Hello Component&lt;/div&gt; }</code></p>
+</div>
+<div class="paragraph">
+<p>To wrap things up we need to export our class.</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx export default TeaserSection</code></p>
+</div>
+<div class="paragraph">
+<p>In the end our <code>Teaser.tsx</code> should look something like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript jsx hljs" data-lang="typescript jsx">import Component from `vue-class-component'
+import \{ FSXABaseSection } from `fsxa-pattern-library'
+
+@Component
+class TeaserSection extends FSXABaseSection&lt;\{}&gt; \{
+render() \{
+return
+
+Hello Component
+
+}
+}
+
+export default TeaserSection</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>When we go back to the browser, instead of the infobox we should see our component.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/WritingComponents/HelloComponent.png" alt="Hello Component"></span></p>
+</div>
+<div class="paragraph">
+<p>Our component is recognized correctly. But we still do not display the data from the <a href="https://docs.e-spirit.com/module/caas/CaaS_FSM_Documentation_EN.html">CaaS</a> in our component.
+For that we hover over our component and click on the appearing question mark on the right side.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="_images/WritingComponents/AvailableProperties.png" alt="Available Properties"></span></p>
+</div>
+<div class="paragraph">
+<p>This shows us the data available to display.
+For the first example we want to display the <code>st_jumbo_headline</code>.</p>
+</div>
+<div class="paragraph">
+<p>For this we create an interface in our component and define the name of the attribute and its type.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">interface Payload {
+  st_jumbo_headline: string
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We update the use of the <code>FSXABaseSection</code> with our new payload: <code>class TeaserSection extends FSXABaseSection&lt;Payload&gt;</code>
+and use the <code>st_jumbo_headline</code> in our <code>render</code> function.</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx render() {     return &lt;div&gt;Headline: {this.payload.st_jumbo_headline}&lt;/div&gt;   }</code></p>
+</div>
+<div class="paragraph">
+<p>Every attribute in our payload is accessible via <code>this.payload</code></p>
+</div>
+<div class="paragraph">
+<p>The result should look like this:
+<span class="image"><img src="_images/WritingComponents/DisplayedHeadline.png" alt="Displayed Headline"></span></p>
+</div>
+<div class="paragraph">
+<p>Next we want to continue to implement our payload interface.
+For some objects we use interfaces from the <a href="https://github.com/e-Spirit/fsxa-api">FSXA-Api</a>, so we also have to import them.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">import { Image, RichTextElement } from 'fsxa-api'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The final interface looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">interface Payload {
+  st_headline: RichTextElement[]
+  st_jumbo_headline: string
+  st_kicker: string
+  st_picture?: Image
+  st_picture_alt: string | null
+  st_text: RichTextElement[]
+  st_button?: {
+    data: {
+      lt_button_text: string
+      lt_internal: {
+        referenceId: string
+        referenceType: string
+      }
+    }
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note that attributes followed by a question mark are optional.</p>
+</div>
+<div class="paragraph">
+<p>In order to display all this information, we can use a component from the <a href="https://github.com/e-Spirit/fsxa-ui/">fsxa-ui</a>.
+First we need to import it. It is located under Sections in the fsxa-ui.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">import { Sections } from 'fsxa-ui'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Since we are using richtext we also need to import FSXARichText from the <a href="https://github.com/e-Spirit/fsxa-pattern-library">fsxa-pattern-library</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">import { FSXABaseSection, FSXARichText } from 'fsxa-pattern-library'</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And then we can use them in our <code>render</code> function:</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx render() {     return (       &lt;Sections.TeaserSection         headline={(&lt;FSXARichText content={this.payload.st_headline} /&gt;) as any}         kicker={this.payload.st_kicker}         text={(&lt;FSXARichText content={this.payload.st_text} /&gt;) as any}         buttonText={this.payload.st_button?.data.lt_button_text}         onButtonClick={() &#8658;           this.triggerRouteChange({             pageId: this.payload.st_button?.data.lt_internal.referenceId           })         }         media={           this.payload.st_picture             ? {                 type: 'image',                 src: this.payload.st_picture.resolutions.ORIGINAL.url,                 resolutions: this.payload.st_picture.resolutions,                 previewId: this.payload.st_picture.previewId               }             : undefined         }       /&gt;     )   }</code></p>
+</div>
+<div class="paragraph">
+<p>Finally, we can name our component. We do this in the <code>@Component</code> annotation.</p>
+</div>
+<div class="paragraph">
+<p><code>typescript jsx @Component({   name: 'TeaserSection' })</code></p>
+</div>
+<div class="paragraph">
+<p>The final <code>Teaser.tsx</code> file looks like this:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript jsx hljs" data-lang="typescript jsx">import Component from `vue-class-component'
+import \{ FSXABaseSection, FSXARichText } from `fsxa-pattern-library'
+import \{ Sections } from `fsxa-ui'
+import \{ Image, RichTextElement } from `fsxa-api'
+
+interface Payload \{
+st_headline: RichTextElement[]
+st_jumbo_headline: string
+st_kicker: string
+st_picture?: Image
+st_picture_alt: string | null
+st_text: RichTextElement[]
+st_button?: \{
+data: \{
+lt_button_text: string
+lt_internal: \{
+referenceId: string
+referenceType: string
+}
+}
+}
+}
+
+@Component(\{
+name: `TeaserSection'
+})
+class TeaserSection extends FSXABaseSection \{
+render() \{
+return (
+&lt;Sections.TeaserSection
+headline=\{() as any}
+kicker=\{this.payload.st_kicker}
+text=\{() as any}
+buttonText=\{this.payload.st_button?.data.lt_button_text}
+onButtonClick=\{() =&gt;
+this.triggerRouteChange(\{
+pageId: this.payload.st_button?.data.lt_internal.referenceId
+})
+}
+media=\{
+this.payload.st_picture
+? \{
+type: `image',
+src: this.payload.st_picture.resolutions.ORIGINAL.url,
+resolutions: this.payload.st_picture.resolutions,
+previewId: this.payload.st_picture.previewId
+}
+: undefined
+}
+/&gt;
+)
+}
+}
+
+export default TeaserSection</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here you can see the result.
+<span class="image"><img src="_images/WritingComponents/FinishedComponent.png" alt="Finished Component"></span></p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_custom_css"><a class="anchor" href="#_custom_css"></a>Custom CSS</h3>
+<div class="paragraph">
+<p>There are a few ways to include your own CSS.
+In this chapter a short overview will be provided. For further details please visit this <a href="./docs/css/index.md">page</a>.</p>
+</div>
+<div class="sect3">
+<h4 id="_using_tailwindcss"><a class="anchor" href="#_using_tailwindcss"></a>Using TailwindCSS</h4>
+<div class="paragraph">
+<p><a href="https://tailwindcss.com/">TailwindCSS</a> is included by default in the FSXA-PWA.
+TailwindCSS is a utility-first framework to provide a lot of classes to design the website directly in the markup without the need to write additional classes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_global_css"><a class="anchor" href="#_global_css"></a>Global CSS</h4>
+<div class="paragraph">
+<p>You can import one or more CSS files globally. These are then available in every component.
+To include a CSS file, you have to modify the <code>css</code> attribute in the <code>nuxt.config.ts</code> file and create a new entry there.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">  /*
+   ** Global CSS
+   */
+  css: [
+    'fsxa-pattern-library/dist/fsxa-pattern-library.css',
+    'fsxa-ui/dist/fsxa-ui.css',
+    '~/path/to/your/global.css'
+  ],</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Please keep in mind not to remove the CSS to the FSXA-Pattern-Library and FSXA-UI, when you want to use these projects.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_using_style_in_components"><a class="anchor" href="#_using_style_in_components"></a>Using style in components</h4>
+<div class="sect4">
+<h5 id="_jsxtsx_components"><a class="anchor" href="#_jsxtsx_components"></a>JSX/TSX Components</h5>
+<div class="paragraph">
+<p>When implementing components using <code>JSX</code> or <code>TSX</code>. You can simply declare your <code>CSS</code> classes in a stylesheet and import that stylesheet into your component using the Typescript or ES6 style import.</p>
+</div>
+<div class="paragraph">
+<p>For example you can make a <code>style.css</code> file next to your component</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">.headline {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: coral;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>And then import and use it in your component like this</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript jsx hljs" data-lang="typescript jsx">…
+import `style.css'
+
+interface Payload \{
+st_title: string
+}
+@Component(\{
+name: ``Headline'',
+})
+class Headline extends FSXABaseComponent\{
+render() \{
+return (
+
+....
+    &lt;h1 class="headline"&gt;{{this.payload.st_title}}&lt;/h1&gt;
+  &lt;/div&gt;
+)
+....
+
+}
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_sfc_components"><a class="anchor" href="#_sfc_components"></a>SFC Components</h5>
+<div class="paragraph">
+<p>When using vue single file components you simply add a style tag to your file and declare your CSS-Classes there. The classes are then available within the scope of your component.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-vue hljs" data-lang="vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;h1 class="headline"&gt;{{this.payload.st_title}}&lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
+&lt;script&gt;
+...
+&lt;/script&gt;
+&lt;style&gt;
+.headline {
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: coral;
+}
+&lt;/style&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_changing_the_app_layout"><a class="anchor" href="#_changing_the_app_layout"></a>Changing the App Layout</h3>
+<div class="paragraph">
+<p>In the app layout you can specify a frame for all pages.
+For example, if all pages include navigation, it can be specified there.</p>
+</div>
+<div class="paragraph">
+<p>Thereby the FSXABaseAppLayout is extended to adjust attributes like the <code>appState</code> and <code>appError</code>. More information can be found <a href="./docs/components/FSXABaseAppLayout.md">here</a>.</p>
+</div>
+<div class="paragraph">
+<p>In the JSX/TSX context <code>{this.$slots.default}</code> defines where the contents of the container will be displayed.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-tsx hljs" data-lang="tsx">render(){
+  return (
+    &lt;div&gt;
+        &lt;Navigation /&gt;
+        {this.$slots.default}
+    &lt;/div&gt;)
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In the SFC context this is achieved with <code>&lt;slot&gt;&lt;/slot&gt;</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-vue hljs" data-lang="vue">&lt;template&gt;
+  &lt;div&gt;
+    &lt;Navigation /&gt;
+    &lt;slot&gt;&lt;/slot&gt;
+  &lt;/div&gt;
+&lt;/template&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Furthermore, here you have all the possibilities that have already been described in the chapters <a href="#my-first-template"><code>My First Template''</a> and <a href="#custom-css"></code>Custom CSS''</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script src="../../_/js/site.js"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
